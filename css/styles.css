@@ -1,3 +1,11 @@
+/* CUSTOM PROPS */
+:root {
+  --body-text: #83869A;
+  --dark: #13183F;
+  --primary: #F74780;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
