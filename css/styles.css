@@ -40,6 +40,12 @@ img {
 }
 
 
+*:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 3px;
+}
+
+
 /* AUTOFILL-STYLES */
 /*input:-webkit-autofill,
 input:-webkit-autofill:hover,
