@@ -143,6 +143,7 @@ select:-webkit-autofill:focus {
   line-height: 28px;
   font-weight: bold;
   text-align: center;
+  text-transform: capitalize;
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
@@ -153,8 +154,15 @@ select:-webkit-autofill:focus {
   background-color: #666ca3;
 }
 
-.button--secondary {
+.button--primary {
+  padding: 15px 38px;
+  min-width: 167px;
   background-color: #f02aa6;
+  background: var(--gradient-1, linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%));
+}
+
+.button--secondary {
+  background-color: #4851ff;
   background-image: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
 }
 
@@ -228,5 +236,11 @@ only screen and (                min-resolution: 2dppx) {
 
   .button {
     padding: 14px 32px;
+    font-size: 18px;
+  }
+
+  .button--primary {
+    padding: 19px 32px 16px;
+    border-radius: 32px;
   }
 }
