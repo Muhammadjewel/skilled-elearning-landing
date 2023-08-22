@@ -185,6 +185,29 @@ select:-webkit-autofill:focus {
 }
 
 
+/* STATS-CARD */
+.stats-card {
+  padding: 16px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+}
+
+.stats-card__title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.stats-card__value {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: normal;
+  color: var(--dark);
+}
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
@@ -202,6 +225,11 @@ select:-webkit-autofill:focus {
 .hero {
   padding-top: 22px;
   padding-bottom: 45px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__info {
@@ -223,6 +251,43 @@ select:-webkit-autofill:focus {
 .hero__description {
   margin-top: 0;
   margin-bottom: 24px;
+}
+
+.hero__img-stats {
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__picture {
+  display: block;
+}
+
+.hero__img {
+  display: block;
+  border-radius: 50%;
+}
+
+.hero__stats-list {
+  margin: 0;
+}
+
+.hero__course-hour-stats-card {
+  position: absolute;
+  z-index: 1;
+  right: 100px;
+  bottom: -24px;
+  min-width: 155px;
+}
+
+.hero__members-stats-card {
+  position: absolute;
+  z-index: 1;
+  top: -24px;
+  right: -20px;
 }
 
 
@@ -252,6 +317,14 @@ only screen and (                min-resolution: 2dppx) {
     margin-bottom: 26px;
     font-size: 40px;
   }
+
+  .hero__course-hour-stats-card {
+    right: 135px;
+  }
+
+  .hero__members-stats-card {
+    right: -37px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -270,6 +343,12 @@ only screen and (                min-resolution: 2dppx) {
     padding-bottom: 80px;
   }
 
+  .hero__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .hero__info {
     width: 100%;
     max-width: 400px;
@@ -283,6 +362,60 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero__description {
     margin-bottom: 25px;
+  }
+
+  .hero__img-stats {
+    margin-right: 41px;
+  }
+
+  .hero__img {
+    width: 216px;
+    height: 383px;
+    border-radius: 159px;
+  }
+
+  .hero__course-hour-stats-card {
+    bottom: -37px;
+    left: -45px;
+    right: auto;
+  }
+
+  .hero__members-stats-card {
+    top: -13px;
+    right: -51px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .stats-card {
+    padding: 20px 24px;
+  }
+
+  .stats-card__title {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .stats-card__value {
+    font-size: 40px;
+  }
+
+  .hero__img-stats {
+    margin-right: 54px;
+  }
+
+  .hero__img {
+    width: 317px;
+    height: 560px;
+  }
+
+  .hero__course-hour-stats-card {
+    bottom: 30px;
+  }
+
+  .hero__members-stats-card {
+    top: 0;
+    right: -10px;
   }
 }
 
@@ -324,5 +457,19 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero__description {
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .hero__course-hour-stats-card {
+    min-width: 200px;
+    bottom: 98px;
+    left: -120px;
+  }
+
+  .hero__members-stats-card {
+    min-width: 155px;
+    top: 103px;
+    right: -118px;
   }
 }
