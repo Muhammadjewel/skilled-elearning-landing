@@ -573,6 +573,7 @@ only screen and (                min-resolution: 2dppx) {
   body {
     font-size: 18px;
     line-height: 28px;
+    background-position: left calc(50% + 587px) top -79px, left top;
   }
 
   .logo__img {
